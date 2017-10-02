@@ -1,0 +1,35 @@
+.button-cta1 {
+    background-color: $cta1-back;
+    color: $cta1-front;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: lighten($cta1-back, 10%);
+    }
+
+    &.is-active {
+        background-color: green;
+    }
+}
+
+.button-cta2 {
+    background-color: $cta2-back;
+    color: $cta2-front;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: lighten($cta2-back, 10%);
+    }
+
+    &.is-active {
+        background-color: #839bb6;
+    }
+}

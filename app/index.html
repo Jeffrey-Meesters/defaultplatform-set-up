@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/d5a57d23ed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Poppins:300,400,600,800" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="bundle.js"></script>
+    <script>
+        // don't bloat! keep it for index.html only!
+        var $navLink = $('[data-nav="link-item"]');
+        $navLink.on('click', function() {
+            $navLink.removeClass("is-active");
+            $(this).addClass("is-active");
+        })
+    </script>
+</body>
+</html>

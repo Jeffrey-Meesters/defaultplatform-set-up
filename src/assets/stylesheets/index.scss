@@ -1,0 +1,82 @@
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $body-bg;
+    color: $body-front;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: -2rem;
+    font-size: 1rem;
+}
+
+.index-nav {
+    background-color: $nav-bg;
+    color: $nav-front;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    height: 50px;
+    padding: 0 2rem;
+}
+
+.index-list-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $highlight-color;
+        transition: 1s;
+    }
+
+    &.is-active {
+        background-color: $highlight-color;
+
+        &:hover {
+            background-color: lighten($highlight-color, 10%);
+        }
+    }
+
+    .fa-superpowers {
+        color: $highlight-color;
+        font-size: 2rem;
+    }
+
+    .index-link {
+        color: $nav-front;
+        text-decoration: none;
+    }
+}
+
+.index-footer-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $footer-bg;
+    color: $footer-front;
+    height: 50px;
+    margin-top: 20px;
+
+    .index-footer-item {
+        height: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
